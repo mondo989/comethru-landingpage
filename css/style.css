@@ -36,6 +36,7 @@ p{
 
 .lead{
 	font-weight: 300;
+	color: black;
 }
 
 button {
@@ -80,14 +81,26 @@ header h1,
 	color: #84c9f7;
 }
 
+.payoff h1 {
+	color: white;
+	text-shadow:  1px 0 1px black;
+	font-size: 40px;
+}
+
+.payoff .fast {
+	color: white;
+	text-shadow:  1px 0 4px black;
+	font-size: 50px;
+}
+
 .features p{
-	color: #06b872;
+	color: #fff;
 }
 
 /*---- Background ----*/
 .features,
 .detail .carousel-indicators .active {
-	background: #0bf397;	
+	background: #84C9F7;	
 }
 	
 
@@ -137,7 +150,7 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default .navbar-brand{
-	color: #333333;
+	color: #84C9F7;
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 2em;
@@ -152,7 +165,7 @@ nav.navbar.fixed-to-top{
 header{
 	padding: 150px 0px 0px 0px;
 	height: 960px;
-	background-color: white;
+	background: #FFF;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
@@ -226,6 +239,7 @@ header .carousel-indicators li {
 	height: 52px;
 	background: url(../img/badge-appstore.png) #3a3a3a no-repeat 0px 5px;
 	color: white;
+	margin: 0 20px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -236,9 +250,12 @@ header .carousel-indicators li {
 	overflow: hidden;
 	padding: 230px 0px 150px 0px;
 	min-height: 600px;
-	background: url('../img/dunes.jpg');
-	background-position: center top;
-	background-repeat: repeat-x;
+	background: url("../img/bluebk.png");
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: stretch;
+	background-repeat: no-repeat;
 	color: white;
 }
 
@@ -246,7 +263,11 @@ header .carousel-indicators li {
 	text-transform: uppercase;
 	font-weight: 300;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 2.8em;
+	font-size: 6em;
+}
+
+h1.fast {
+	font-size: 40px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -459,6 +480,152 @@ header .carousel-indicators li {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+
+.main-page-img {
+
+
+	background: white;
+}
+
+.signup-btn {
+	background: #f3f3f3;
+	border: 2px solid #84C9F7;
+	padding: 10px 30px;
+	margin-top: 4px;
+}
+
+
+
+
+
+
+
+#bg{
+  position:relative;
+  top:20px;
+  height:600px;
+  width:800px;
+  background:url('http://i.imgur.com/3eP9Z4O.png') center no-repeat;
+  background-size:cover;
+  margin-left:auto;
+  margin-right:auto; 
+  border:#fff 15px solid;
+}
+
+.module{
+  background: white;
+  position:relative;
+  top:15%;    
+  height: 240px;
+  width:450px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 7px;
+  padding-top: 10px;
+    
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+  
+}
+
+.module ul{
+  list-style-type:none;
+  margin:0;
+}
+
+.tab{
+  float:left;
+  height:60px;
+  width:25%;
+  padding-top:20px;
+  box-sizing:border-box;
+  background:#eeeeee;  
+  text-align:center;
+  cursor:pointer;
+  transition:background .4s;
+}
+
+.tab:first-child{  
+  -webkit-border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.tab:last-child{  
+  -webkit-border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.tab:hover{  
+  background-color:rgba(0,0,0,.1);
+}
+
+.activeTab{
+  background:#fff;
+}
+
+.activeTab .icon{
+  opacity:1;
+}
+
+.icon{
+  height:24px;
+  width:24px;
+  opacity:.2;
+}
+
+.form{
+  float:left;
+  height:100%;
+  width:100%;
+  box-sizing:border-box;
+  padding:40px;
+  padding-top: 40px;
+  margin-top: -30px;
+}
+
+.textbox{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:30px;
+}
+
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+}
+
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:30px;
+  background:#90c843;
+  color:#FFF;
+  font-weight:bold;
+  font-size: 12pt;
+  transition:background .4s;
+  cursor:pointer;
+}
+
+.button:hover{
+  background:#80b438;
+  
+}
+
+
+
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	MEDIA QUERIES
